@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">WORDLS</a>
+            <div div class="toggle"></div>
+        </header>
+        <img src="./img/bg.jpg" class="bg" alt="bg">
+        <img src="./img/bird.png" class="bird" alt="bird">
+
+        <div class="content">
+            <h2>We Can Save The <br> <span>World</span></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam ipsa quo. Quae illo deserunt
+                reprehenderit debitis, at dignissimos et perspiciatis veritatis eius. Deleniti modi quis assumenda,
+                tempora nemo eum?</p>
+            <a href="#"> <span class="text_span">Join Us</span></a>
+        </div>
+
+        <ul class="sci">
+            <li><a href=""><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="./img/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="./img/twitter.png" alt=""></a></li>
+        </ul>
+
+        <div class="textBlocks">
+            <div class="blocks">
+                <h3>The right way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iure magni est nulla explicabo
+                    cum? In tempora quo voluptates maiores?</p>
+            </div>
+            <div class="blocks">
+                <h3>How to start in friendly habits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iure magni est nulla explicabo
+                    cum? In tempora quo voluptates maiores?</p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            document.addEventListener ("mousemove", function (e){
+                const bg = document.querySelector('.bg');
+                const bird = document.querySelector('.bird');
+                const content = document.querySelector('.content');
+
+                bg.style.width = 100 + e.pageX/100 + '%';
+                bg.style.height = 100 + e.pageX/100 + '%';
+
+                bird.style.right = 100 + e.pageX/2 + 'px';
+                content.style.left = 100 + e.pageX/4 + 'px';
+
+            })
+
+        </script>
+
+
+  
+
+
+    </section>
+
+</body>
+
+</html>
